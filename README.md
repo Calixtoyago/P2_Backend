@@ -62,30 +62,39 @@ Cada produto possui:
 ```text
 .
 ├── app/
-│   ├── main.py
-│   ├── database.py
+│   ├── core/
+│   │   └── exceptions.py
 │   ├── models.py
-│   ├── schemas.py
+│   │   └── models.py
+│   ├── reporitory/
+│   │   └── produto_repository.py
 │   ├── routers/
-│   │   └── produtos.py
+│   │   └── produto_router.py
+│   ├── schemas/
+│   │   └── produto_schema.py
 │   ├── services/
 │   │   └── produto_service.py
-│   └── __init__.py
+│   └── main.py
 │
 ├── migrations/
 │   ├── versions/
 │   └── env.py
+│   └──README.md
+│   └──script.py.mako
 │
 ├── tests/
 │   ├── __init__.py
 │   └── test_produtos.py
 │
+├── .env.example
+├── alembic.init 
 ├── conftest.py
-├── alembic.ini
+├── database.py
 ├── docker-compose.yml
+├── Dockerfile
+├── pytest.py
+├── README.md
 ├── requirements.txt
-├── pytest.ini
-└── README.md
 ```
 
 ---
